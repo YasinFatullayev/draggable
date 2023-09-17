@@ -1,9 +1,9 @@
 pipeline {
     agent any
     
-    tools {
+   /* tools {
         nodejs "nodejs"
-    }
+    }*/
     
     stages {
         stage('Build') {
@@ -20,7 +20,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                npm install
+                //npm install
             }
         }
     }
