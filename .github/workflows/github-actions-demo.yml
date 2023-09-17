@@ -16,5 +16,7 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - name: Run react project
-        run: npm install&npm start
+        run: |
+           npm install
+           npm start
       - run: echo "🍏 This job's status is ${{ job.status }}."
